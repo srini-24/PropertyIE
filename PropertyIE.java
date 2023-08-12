@@ -35,12 +35,12 @@ public class PropertyIE {
 		 driver.findElement(By.xpath("//div[contains(@class,'search_result')][1]//div[contains(@class,'sresult_address')]//a")).click();
 		 driver.navigate().refresh();
 		 driver.findElement(By.xpath("//div[contains(@class,'search_result')][1]//div[contains(@class,'sresult_address')]//a")).click();
-		 EmailAgent(driver, "Vinayak", "info.failtefuturehomes@gmail.com","+353892554821");
+		 EmailAgent(driver, "Vina", "ie.futurehomes@gmail.com","+3538444444");
 		 driver.navigate().back();
 		 for(int i=2;i<=size;i++){
 			 ScrollUpDown(driver, By.xpath("//div[contains(@class,'search_result')]["+i+"]//div[contains(@class,'sresult_address')]//a"));
 			 driver.findElement(By.xpath("//div[contains(@class,'search_result')]["+i+"]//div[contains(@class,'sresult_address')]//a")).click();
-			 EmailAgent(driver, "Vinayak", "info.failtefuturehomes@gmail.com","+353892554821");
+			 EmailAgent(driver, "Vina", "ie.futurehomes@gmail.com","+3538444444");
 			 driver.navigate().back();
 		 }
 		
@@ -111,7 +111,7 @@ public class PropertyIE {
 			driver.findElement(contact_number).sendKeys(contact);
 			Thread.sleep(1000);
 			ScrollUpDown(driver, contact_text);
-			driver.findElement(contact_text).sendKeys("Hello ," + '\n' + " Me ad my fiancé are looking for a permanent accommodation." + '\n' + " We came across your advertisement and we are very much interested in renting it." + '\n' + " We both are full time working professionals earning more than 70000+ euros yearly and can provide pay slips and references." + '\n' + " We are clean, peaceful, vegetarian, non party and non smokers. " + '\n' + " We don’t have pets with us. We maintain the cleanliness standard of the house. " + '\n' + " I would like to know if there is any possibility that we can have a viewing. " + '\n' + " We can move in immediately as well. " + '\n' + " Thank you," + '\n' + " Vinayak");
+			driver.findElement(contact_text).sendKeys("Hello ," + '\n' + " Me ad my fiancé are looking for a permanent accommodation." + '\n' + " We came across your advertisement and we are very much interested in renting it." + '\n' + " We both are full time working professionals earning more than 70000+ euros yearly and can provide pay slips and references." + '\n' + " We are clean, peaceful, vegetarian, non party and non smokers. " + '\n' + " We don’t have pets with us. We maintain the cleanliness standard of the house. " + '\n' + " I would like to know if there is any possibility that we can have a viewing. " + '\n' + " We can move in immediately as well. " + '\n' + " Thank you," + '\n' + " Vina");
 			Thread.sleep(1000);
 			ScrollUpDown(driver, terms);
 			driver.findElement(terms).click();
